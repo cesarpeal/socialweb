@@ -1,0 +1,505 @@
+@font-face{
+  font-family: "WebSymbolsRegular";
+  src: url('./fonts/websymbols-regular-webfont.eot');
+  src: url('./fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('./fonts/websymbols-regular-webfont.woff') format('woff'),
+     url('./fonts/websymbols-regular-webfont.ttf') format('truetype'),
+     url('./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  font-weight:normal;
+  font-style: normal;
+}
+
+.icon{
+  font-family:"WebSymbolsRegular";
+}
+
+.clearfix{
+  clear:both;
+  float:none;
+}
+
+a:visited, a:link{
+  text-decoration: none;
+  color: black;
+}
+
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Helvetica;
+  text-align:center;
+  margin: 0px;
+  padding:0px;
+  background: #f0f3ea;
+}
+
+#header{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+}
+
+#titulo{
+  background-color: red;
+  flex: 1;
+}
+
+.center{
+  height: 100%;
+  width:100%;
+  margin:0px auto;
+}
+
+#content{
+  width:80%;
+  min-height:700px;
+  float:left;
+  color:black;
+  background: #f0f3ea;
+}
+
+li{
+  list-style: none;
+}
+
+#menu{
+  background-color: pink;
+  flex: 2.7;
+}
+
+#menu ul{
+  display: flex;
+  flex-direction: row;
+}
+#menu ul li{
+  flex: 1;
+}
+
+#searcher{
+  background-color: blue;
+  flex: 1;
+}
+
+#login{
+  background-color: green;
+  flex: 1.8;
+}
+
+article.post{
+  margin-left: 400px;
+  width: 45%;
+  height: 40%;
+  border-radius:9px;
+  border: solid 1px grey;
+  margin-top: 40px;
+  box-shadow: 5px 3px 3px #cccc;
+}
+
+.post-header{
+  align-self: start;
+  margin-top: 8px;
+  margin-left: 43px;
+  margin-bottom: 11px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.post-header .user{
+  align-self: start;
+}
+
+.post-header .user h5{
+  margin-top: 15px;
+  margin-left: 4px;
+}
+
+.post-header h4{
+  align-self: start;
+}
+
+.post-contenido{
+  min-height: 70px;
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-contenido p{
+  padding: 10px;
+  float: left;
+  align-self: flex-start;
+}
+
+.post-comments{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 85%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.post-manage{
+  display: flex;
+  align-self: flex-end;
+  flex-direction: row;
+  margin-right: 100px;
+  margin-top: -55px;
+}
+
+.post-manage button{
+  margin-top: 15px;
+  background-color: red;
+  width: 90px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.post-manage a{
+  padding-top: 10px;
+  margin-top: 15px;
+  background-color: orange;
+  width: 90px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 2px 1px 1px 1px #bbbb;
+}
+
+.single-comment{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.user{
+  width: 50%;
+  display: flex;
+}
+
+.single-comment p{
+  align-self: start;
+  margin-top: 11px;
+  margin-left: 7px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+.single-comment h5{
+  align-self: start;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+img.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+}
+
+.comment{
+  width: 90%;
+  margin-left: 30px;
+}
+
+.comment textarea{
+  border-radius: 9px;
+  width: 100%;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.comment input[type=submit]{
+  float: left;
+  margin-top: 11px;
+}
+
+#content .imagePost{
+  max-height: 400px;
+  max-width: 500px;
+  border-radius: 7px;
+}
+
+.dropdown li{
+    position:relative;
+    width:120px;
+}
+.dropdown button{
+  text-decoration: none;
+}
+
+.dropdown li a,
+.dropdown li button{
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 10px;
+    width:120px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+    font-size: 16px;
+}
+
+.dropdown li a:hover,
+.dropdown li button:hover{
+    color:#000;
+    background-color:#fff;
+}
+
+.dropdown li ul{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 90px;
+}
+
+.dropdown li:hover ul{
+  display: block;
+}
+
+.dropdown-like{
+  width: 50px;
+  margin-top: 20px;
+}
+.dropdown-like li{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-like li ul{
+  display: none;
+  position: absolute;
+  left: 50px;
+}
+
+.dropdown-like li:hover ul{
+  display: block;
+  display: flex;
+  background-color: none;
+  
+}
+
+button.like-button{
+  text-decoration: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+
+.like-icon {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.like-icon:hover {
+  width: 120%;
+  height: 120%;
+  margin-bottom: 30px;
+}
+
+div.profile{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profileUser{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.imageProfile{
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+}
+
+aside.profile{
+  display: flex;
+  flex-direction: column;
+  margin-left: 220px;
+}
+
+.petitions{
+  float: right;
+  margin-top: 50px;
+  height: 170px;
+  overflow: auto;
+}
+
+#createPost{
+  margin-top: 30px;
+  background-color: green;
+  height: 45px;
+  width: 90px;
+  padding-top: 13px;
+  border-radius: 12px;
+  margin-left: 70px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 450px;
+}
+
+.form-user{
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  margin-left: 500px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.form-group input[type=text],
+.form-group input[type=text],
+.form-group input[type=password],
+.form-group input[type=submit],
+.form-group textarea,
+.form-group img,
+.form-group button{
+  margin-top: 10px;
+}
+
+.form-group label{
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.form-group-image{
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.form-group input[type=text],
+.form-group input[type=password],{
+  width: 200px;
+  align-self: center;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.form-user .form-group input[type=text],
+.form-user .form-group input[type=password]{
+  width: 150px;
+  align-self: center;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-top: 2px;
+  border-radius: 6px;
+}
+
+.form-group textarea{
+  width: 500px;
+  height: 100px;
+  align-self: center;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.form-group input[type=submit]{
+  width: 90px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 9px;
+  margin-top: 40px;
+}
+
+img.imageCreatePost{
+  height: 280px;
+  width: 280px;
+}
+
+.friends{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.friends-box{
+  width: 350px;
+  height: 250px;
+  margin-top: 5px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.friends h3{
+  margin-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.friends-box h4{
+  align-self: flex-start;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.friend{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.fotos-box{
+  width: 630px;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 400px;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.image-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-box button{
+  margin-top: 4px;
+  width: 100px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.userImage{
+  width: 170px;
+  height: 170px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,180 @@
+user_register:
+    path: /registro
+    controller: App\Controller\UserController::register
+    methods: [POST]
+
+user_login:
+    path: /login
+    controller: App\Controller\UserController::login
+    methods: [POST]
+
+user_edit:
+    path: /editar-usuario
+    controller: App\Controller\UserController::edit
+    methods: [PUT]
+
+user_posts:
+    path: /user-posts
+    controller: App\Controller\PostController::getUserPosts
+    methods: [POST]
+
+user_search:
+    path: /search/{search}
+    controller: App\Controller\UserController::searchUsers
+    methods: [GET]
+
+user_identity:
+    path: /identity
+    controller: App\Controller\UserController::getIdentity
+    methods: [POST]
+
+user:
+    path: /user
+    controller: App\Controller\UserController::getUser
+    methods: [POST]
+
+user_change_image:
+    path: /change-profile-image
+    controller: App\Controller\UserController::changeProfileImage
+    methods: [PUT]
+
+get_Post:
+    path: /post
+    controller: App\Controller\PostController::getPost
+    methods: [POST]
+
+post_create:
+    path: /crear-post
+    controller: App\Controller\PostController::create
+    methods: [POST]
+
+post_edit:
+    path: /editar-post/{id}
+    controller: App\Controller\PostController::edit
+    methods: [PUT]
+
+post_delete:
+    path: /borrar-post
+    controller: App\Controller\PostController::delete
+    methods: [DELETE]
+
+home_posts:
+    path: /home
+    controller: App\Controller\PostController::home
+    methods: [POST]
+
+foto_get:
+    path: /foto/{filename}
+    controller: App\Controller\FotoController::getFoto
+    methods: [GET]
+
+get_user_images:
+    path: /user-images
+    controller: App\Controller\UserController::getUserImages
+    methods: [POST]
+
+foto_upload:
+    path: /upload-image
+    controller: App\Controller\FotoController::upload
+    methods: [POST]
+
+foto_delete:
+    path: /delete-image/{id}
+    controller: App\Controller\FotoController::delete
+    methods: [DELETE]
+
+foto_rename:
+    path: /rename-image/{id}
+    controller: App\Controller\FotoController::rename
+    methods: [PUT]
+
+post_comments:
+    path: /post-comments/{idPost}
+    controller: App\Controller\PostController:getPostComments
+    methods: [GET]
+
+comment_post:
+    path: /comentar-post/{post_id}
+    controller: App\Controller\CommentController::commentPost
+    methods: [POST]
+
+comment_foto:
+    path: /comentar-foto/{foto_id}
+    controller: App\Controller\CommentController::commentFoto
+    methods: [POST]
+
+edit_comment:
+    path: /editar-comentario/{id}
+    controller: App\Controller\CommentController::edit
+    methods: [PUT]
+
+comment_delete:
+    path: /borrar-comentario/{id}
+    controller: App\Controller\CommentController::delete
+    methods: [DELETE]
+
+get_fotos_post:
+    path: /fotos-post/{id}
+    controller: App\Controller\FotoPostController:getFotosPost
+    methods: [GET]
+
+foto_post_get:
+    path: /foto-post/{filename}
+    controller: App\Controller\FotoPostController:getFotoPost
+    methods: [GET]
+
+foto_post_upload:
+    path: /upload-post-image/{post_id}
+    controller: App\Controller\FotoPostController::upload
+    methods: [POST]
+
+foto_post_rename:
+    path: /rename-post-image/{id}
+    controller: App\Controller\FotoPostController::rename
+    methods: [PUT]
+
+foto_post_delete:
+    path: /delete-post-image/{id}
+    controller: App\Controller\FotoPostController::delete
+    methods: [DELETE]
+
+like:
+    path: /like
+    controller: App\Controller\LikeController::like
+    methods: [POST]
+
+
+count_post_likes:
+    path: /count-post-likes/{post_id}
+    controller: App\Controller\LikeController::count_post_likes
+    methods: [GET]
+
+count_foto_likes:
+    path: /count-foto-likes/{foto_id}
+    controller: App\Controller\LikeController::count_foto_likes
+    methods: [GET]
+
+beFriend:
+    path: /befriend
+    controller: App\Controller\UserController::beFriend
+    methods: [POST]
+
+petitions:
+    path: /petitions
+    controller: App\Controller\UserController::getBeFriendPetitions
+    methods: [POST]
+
+manage_petition:
+    path: /manage-petition
+    controller: App\Controller\UserController::manageFriendshipPetition
+    methods: [POST]
+
+befriended:
+    path: /befriended
+    controller: App\Controller\UserController::getPetition
+    methods: [POST]
+
+friends:
+    path: /friends
+    controller: App\Controller\UserController::getFriends
+    methods: [POST]
