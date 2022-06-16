@@ -68,7 +68,10 @@ function Header(){
 					</nav>
 					<div id="login">
 						{(!token) ? (
-							<Login />
+							<React.Fragment>
+								<Login />
+								<li><Link replace to="/register">Mi perfil</Link></li>
+							</React.Fragment>
 							) : (
 							<React.Fragment>
 								<h4>Bienvenido <span>{user.nombre} {user.apellidos}</span></h4>
